@@ -1,0 +1,1 @@
+Dir[(File.expand_path(File.dirname(__FILE__)) + "/gradleman/*.rb")].each { |file| require file }

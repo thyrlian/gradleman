@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+require_relative 'string_util'
 
 module Gradleman
   class MultiDexInspector
@@ -80,22 +80,5 @@ module Gradleman
     end
     
     private_class_method :list_dependency_hierarchy, :parse, :inspect, :report
-  end
-  
-  class StringUtil
-    class << self
-      def colorize(text, color)
-        case color.intern
-        when :red
-          "\e[31m#{text}\e[0m"
-        when :green
-          "\e[32m#{text}\e[0m"
-        when :yellow
-          "\e[33m#{text}\e[0m"
-        else
-          text
-        end
-      end
-    end
   end
 end
