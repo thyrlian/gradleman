@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.email       = ['thyrlian@gmail.com']
   s.homepage    = 'https://github.com/thyrlian/gradleman'
   s.files       = `git ls-files`.split("\n")
+  s.executables = ['gradleman']
 end

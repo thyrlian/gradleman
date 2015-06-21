@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'gradleman'
+Gradleman::ControlCenter.launch

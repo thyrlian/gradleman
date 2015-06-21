@@ -1,10 +1,8 @@
-require_relative 'string_util'
-
 module Gradleman
   class MultiDexInspector
     class << self
-      def list_dependency_hierarchy(path, project)
-        cmd = "cd #{path} && gradle :#{project}:dependencies"
+      def list_dependency_hierarchy(directory, project)
+        cmd = "cd #{directory} && gradle :#{project}:dependencies"
         begin
           output = `#{cmd}`
         rescue Exception => e
